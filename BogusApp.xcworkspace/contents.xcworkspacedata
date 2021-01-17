@@ -3,13 +3,6 @@
    version = "1.0">
    <Group
       location = "container:"
-      name = "Common">
-      <FileRef
-         location = "group:Common/BogusApp-Common-Models">
-      </FileRef>
-   </Group>
-   <Group
-      location = "container:"
       name = "Backend">
       <FileRef
          location = "group:Backend/BogusApp-Backend-Api">
@@ -25,6 +18,13 @@
       </FileRef>
       <FileRef
          location = "group:Backend/BogusApp-Backend-Utils">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Common">
+      <FileRef
+         location = "group:Common/BogusApp-Common-Models">
       </FileRef>
    </Group>
 </Workspace>
