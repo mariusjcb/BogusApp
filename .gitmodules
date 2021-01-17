@@ -1,0 +1,6 @@
+[submodule "Backend"]
+	path = Backend
+	url = https://github.com/mariusjcb/BogusApp-Backend.git
+[submodule "Common"]
+	path = Common/BogusApp-Common-Models
+	url = https://github.com/mariusjcb/BogusApp-Common-Models.git
