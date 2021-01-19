@@ -1,3 +1,18 @@
 [submodule "Common"]
 	path = Common/BogusApp-Common-Models
 	url = https://github.com/mariusjcb/BogusApp-Common-Models.git
+[submodule "BogusApp-Microservices-ApiGateway"]
+	path = Microservices/BogusApp-Microservices-ApiGateway
+	url = https://github.com/mariusjcb/Microservices/BogusApp-Microservices-ApiGateway.git
+[submodule "BogusApp-Microservices-Benefits"]
+	path = Microservices/BogusApp-Microservices-Benefits
+	url = https://github.com/mariusjcb/BogusApp-Microservices-Benefits.git
+[submodule "BogusApp-Microservices-Channels"]
+	path = Microservices/BogusApp-Microservices-Channels
+	url = https://github.com/mariusjcb/BogusApp-Microservices-Channels.git
+[submodule "BogusApp-Microservices-Fees"]
+	path = Microservices/BogusApp-Microservices-Fees
+	url = https://github.com/mariusjcb/BogusApp-Microservices-Fees.git
+[submodule "BogusApp-Microservices-TargetSpecifics"]
+	path = Microservices/BogusApp-Microservices-TargetSpecifics
+	url = https://github.com/mariusjcb/BogusApp-Microservices-TargetSpecifics.git
