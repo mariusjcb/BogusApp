@@ -6,21 +6,27 @@
    </FileRef>
    <Group
       location = "container:"
-      name = "Backend">
+      name = "Microservices">
       <FileRef
-         location = "group:Backend/BogusApp-Backend-Api">
+         location = "group:Microservices/README.md">
       </FileRef>
       <FileRef
-         location = "group:Backend/BogusApp-Backend-Application">
+         location = "group:Microservices/docker-compose.yml">
       </FileRef>
       <FileRef
-         location = "group:Backend/BogusApp-Backend-Domain">
+         location = "group:Microservices/BogusApp-Microservices-ApiGateway">
       </FileRef>
       <FileRef
-         location = "group:Backend/BogusApp-Backend-Persistence">
+         location = "group:Microservices/BogusApp-Microservices-Benefits">
       </FileRef>
       <FileRef
-         location = "group:Backend/BogusApp-Backend-Utils">
+         location = "group:Microservices/BogusApp-Microservices-Channels">
+      </FileRef>
+      <FileRef
+         location = "group:Microservices/BogusApp-Microservices-Fees">
+      </FileRef>
+      <FileRef
+         location = "group:Microservices/BogusApp-Microservices-TargetSpecifics">
       </FileRef>
    </Group>
    <Group
