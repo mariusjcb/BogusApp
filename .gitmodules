@@ -3,7 +3,7 @@
 	url = https://github.com/mariusjcb/BogusApp-Common-Models.git
 [submodule "BogusApp-Microservices-ApiGateway"]
 	path = Microservices/BogusApp-Microservices-ApiGateway
-	url = https://github.com/mariusjcb/Microservices/BogusApp-Microservices-ApiGateway.git
+	url = https://github.com/mariusjcb/BogusApp-Microservices-ApiGateway.git
 [submodule "BogusApp-Microservices-Benefits"]
 	path = Microservices/BogusApp-Microservices-Benefits
 	url = https://github.com/mariusjcb/BogusApp-Microservices-Benefits.git
