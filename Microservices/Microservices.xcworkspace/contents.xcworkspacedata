@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:BogusApp-Microservices-ApiGateway">
+   </FileRef>
+   <FileRef
+      location = "group:BogusApp-Microservices-Benefits">
+   </FileRef>
+   <FileRef
+      location = "group:BogusApp-Microservices-Channels">
+   </FileRef>
+   <FileRef
+      location = "group:BogusApp-Microservices-Fees">
+   </FileRef>
+   <FileRef
+      location = "group:BogusApp-Microservices-TargetSpecifics">
+   </FileRef>
+</Workspace>

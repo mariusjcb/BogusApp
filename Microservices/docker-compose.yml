@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+    bogusapp-microservices-apigateway:
+        build: ./BogusApp-Microservices-ApiGateway
+    bogusapp-microservices-channels:
+        build: ./BogusApp-Microservices-Channels
+    bogusapp-microservices-fees:
+        build: ./BogusApp-Microservices-Fees
+    bogusapp-microservices-benefits:
+        build: ./BogusApp-Microservices-Benefits
+    bogusapp-microservices-targetspecifics:
+        build: ./BogusApp-Microservices-TargetSpecifics
