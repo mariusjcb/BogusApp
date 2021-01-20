@@ -3,11 +3,21 @@ version: '3.7'
 services:
     bogusapp-microservices-apigateway:
         build: ./BogusApp-Microservices-ApiGateway
+        ports: 
+            - "8080:8080"
     bogusapp-microservices-channels:
         build: ./BogusApp-Microservices-Channels
+        expose: 
+            - "8081"
     bogusapp-microservices-fees:
         build: ./BogusApp-Microservices-Fees
+        expose: 
+            - "8082"
     bogusapp-microservices-benefits:
         build: ./BogusApp-Microservices-Benefits
+        expose: 
+            - "8083"
     bogusapp-microservices-targetspecifics:
         build: ./BogusApp-Microservices-TargetSpecifics
+        expose: 
+            - "8084"
