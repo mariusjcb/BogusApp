@@ -1,0 +1,350 @@
+{
+    "targets": [
+        {
+            "name": "Location",
+            "channels": ["Facebook", "Linkedin", "Twitter", "Instagram", "Google AdWords"]
+        },
+        {
+            "name": "Age",
+            "channels": ["Facebook", "Linkedin", "Twitter", "Instagram", "Google AdWords"]
+        },
+        {
+            "name": "Sex",
+            "channels": ["Facebook", "Linkedin", "Twitter", "Instagram", "Google AdWords"]
+        },
+        {
+            "name": "Spoken languages",
+            "channels": ["Facebook", "Twitter", "Instagram"]
+        },
+        {
+            "name": "Events",
+            "channels": ["Facebook", "Twitter"]
+        },
+        {
+            "name": "Company",
+            "channels": ["Linkedin"]
+        },
+        {
+            "name": "Industry",
+            "channels": ["Linkedin", "SEO"]
+        },
+        {
+            "name": "Expertise",
+            "channels": ["Linkedin"]
+        },
+        {
+            "name": "Education",
+            "channels": ["Linkedin"]
+        },
+        {
+            "name": "Technology",
+            "channels": ["Twitter"]
+        },
+        {
+            "name": "Interests",
+            "channels": ["Instagram"]
+        },
+        {
+            "name": "Device",
+            "channels": ["Google AdWords"]
+        },
+        {
+            "name": "Keywords",
+            "channels": ["Google AdWords", "SEO"]
+        },
+        {
+            "name": "Similar products / services",
+            "channels": ["Google AdWords"]
+        },
+        {
+            "name": "Hyperlinks",
+            "channels": ["SEO"]
+        }
+    ],
+    "fees": {
+        "Facebook": [
+            {
+                "price": 140,
+                "benefits": [
+                    "3-8 listings",
+                    "12 optimizations",
+                    "Campaign setup",
+                    "Admin and optimising",
+                    "Email support",
+                    "Monthly reports",
+                    "Install",
+                    "Conversion monitoring",
+                    "Landing page"
+                ]
+            },
+            {
+                "price": 200,
+                "benefits": [
+                    "8-15 listings",
+                    "20 optimizations",
+                    "Campaign setup",
+                    "Admin and optimising",
+                    "Email support",
+                    "Monthly reports",
+                    "Install",
+                    "Conversion monitoring",
+                    "Landing page",
+                    "Phone support",
+                    "Remarketing"
+                ]
+            },
+            {
+                "price": 100,
+                "benefits": [
+                    "1-3 listings",
+                    "8 optimizations",
+                    "Campaign setup",
+                    "Admin and optimising",
+                    "Email support",
+                    "Monthly reports",
+                    "Install",
+                    "Conversion monitoring"
+                ]
+            },
+            {
+                "price": 75,
+                "benefits": [
+                    "1 pagina Facebook",
+                    "8 optimizations",
+                    "Campaign setup",
+                    "Admin and optimising",
+                    "Email support",
+                    "Monthly reports"
+                ]
+            }
+        ],
+        "Linkedin": [
+            {
+                "price": 150,
+                "benefits": [
+                    "5-8 listings",
+                    "Campaign setup",
+                    "Admin and optimising",
+                    "Email support",
+                    "Monitoring",
+                    "Monthly reports"
+                ]
+            },
+            {
+                "price": 180,
+                "benefits": [
+                    "8-10 listings",
+                    "Campaign setup",
+                    "Admin and optimising",
+                    "Email support",
+                    "Monitoring",
+                    "Monthly reports",
+                    "Phone support"
+                ]
+            },
+            {
+                "price": 120,
+                "benefits": [
+                    "1-3 listings",
+                    "Campaign setup",
+                    "Admin and optimising",
+                    "Email support",
+                    "Monthly reports"
+                ]
+            },
+            {
+                "price": 60,
+                "benefits": [
+                    "1-2 listings",
+                    "Campaign setup",
+                    "Admin and optimising",
+                    "Email support"
+                ]
+            }
+        ],
+        "Twitter": [
+            {
+                "price": 170,
+                "benefits": [
+                    "10-15 listings",
+                    "Campaign setup",
+                    "Campaign auctioning",
+                    "Targeted tweets",
+                    "Email support",
+                    "Admin and optimising",
+                    "Monthly reports"
+                ]
+            },
+            {
+                "price": 250,
+                "benefits": [
+                    "15-20 listings",
+                    "Campaign setup",
+                    "Campaign auctioning",
+                    "Targeted tweets",
+                    "Email support",
+                    "Admin and optimising",
+                    "Monthly reports",
+                    "Phone support"
+                ]
+            },
+            {
+                "price": 120,
+                "benefits": [
+                    "5-10 listings",
+                    "Campaign setup",
+                    "Campaign auctioning",
+                    "Targeted tweets",
+                    "Email support",
+                    "Admin and optimising"
+                ]
+            },
+            {
+                "price": 120,
+                "benefits": [
+                    "1-5 listings",
+                    "Campaign setup",
+                    "Campaign auctioning",
+                    "Targeted tweets",
+                    "Email support",
+                    "Admin and optimising"
+                ]
+            }
+        ],
+        "Instagram": [
+            {
+                "price": 180,
+                "benefits": [
+                    "5-8 listings",
+                    "4 optimizations",
+                    "Campaign setup",
+                    "Campaign testing",
+                    "Campaign analysis",
+                    "Email support"
+                ]
+            },
+            {
+                "price": 270,
+                "benefits": [
+                    "10-12 listings",
+                    "8 optimizations",
+                    "Campaign setup",
+                    "Campaign testing",
+                    "Campaign analysis",
+                    "Monitoring",
+                    "Email support",
+                    "Phone support"
+                ]
+            },
+            {
+                "price": 130,
+                "benefits": [
+                    "1-4 listings",
+                    "2 optimizations",
+                    "Campaign setup",
+                    "Campaign analysis",
+                    "Email support"
+                ]
+            },
+            {
+                "price": 80,
+                "benefits": [
+                    "1 listing",
+                    "0 optimizations",
+                    "Campaign setup",
+                    "Email support"
+                ]
+            }
+        ],
+        "Google AdWords": [
+            {
+                "price": 150,
+                "benefits": [
+                    "3 optimizations",
+                    "Campaign setup",
+                    "Content creation",
+                    "Admin and monitoring",
+                    "Email support"
+                ]
+            },
+            {
+                "price": 230,
+                "benefits": [
+                    "5 optimizations",
+                    "Campaign setup",
+                    "Content creation",
+                    "Admin and monitoring",
+                    "Monthly reports",
+                    "Email support",
+                    "Phone support"
+                ]
+            },
+            {
+                "price": 90,
+                "benefits": [
+                    "1 optimization",
+                    "Campaign setup",
+                    "Content creation",
+                    "Email support"
+                ]
+            }
+        ],
+        "SEO": [
+            {
+                "price": 270,
+                "benefits": [
+                    "Scope setup",
+                    "Market research",
+                    "Keywords research",
+                    "Content analysis",
+                    "Hyperlinks analysis",
+                    "Local SEO",
+                    "Website optimisation",
+                    "Backlink setup",
+                    "Campaign analysis",
+                    "Email support"
+                ]
+            },
+            {
+                "price": 320,
+                "benefits": [
+                    "Scope setup",
+                    "Market research",
+                    "Keywords research",
+                    "Content analysis",
+                    "Hyperlinks analysis",
+                    "Local SEO",
+                    "Audit SEO",
+                    "Website optimisation",
+                    "Backlink setup",
+                    "Campaign analysis",
+                    "Email support"
+                ]
+            },
+            {
+                "price": 180,
+                "benefits": [
+                    "Scope setup",
+                    "Market research",
+                    "Keywords research",
+                    "Content analysis",
+                    "Hyperlinks analysis",
+                    "Local SEO",
+                    "Backlink setup",
+                    "Email support"
+                ]
+            },
+            {
+                "price": 110,
+                "benefits": [
+                    "Scope setup",
+                    "Market research",
+                    "Keywords research",
+                    "Content analysis",
+                    "Local SEO",
+                    "Email support"
+                ]
+            }
+        ]
+    }
+}

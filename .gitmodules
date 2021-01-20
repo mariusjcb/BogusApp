@@ -1,6 +1,9 @@
-[submodule "Common"]
+[submodule "BogusApp-Common-Models"]
 	path = Common/BogusApp-Common-Models
 	url = https://github.com/mariusjcb/BogusApp-Common-Models.git
+[submodules "BogusApp-Common-MockDataProvider"]
+        path = Common/BogusApp-Common-MockDataProvider
+        url = https://github.com/mariusjcb/BogusApp-Common-MockDataProvider.git
 [submodule "BogusApp-Microservices-ApiGateway"]
 	path = Microservices/BogusApp-Microservices-ApiGateway
 	url = https://github.com/mariusjcb/BogusApp-Microservices-ApiGateway.git

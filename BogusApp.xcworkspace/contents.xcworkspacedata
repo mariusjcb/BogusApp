@@ -11,6 +11,9 @@
          location = "group:Microservices/README.md">
       </FileRef>
       <FileRef
+         location = "group:Microservices/Specs.json">
+      </FileRef>
+      <FileRef
          location = "group:Microservices/docker-compose.yml">
       </FileRef>
       <FileRef
@@ -32,6 +35,9 @@
    <Group
       location = "container:"
       name = "Common">
+      <FileRef
+         location = "group:Common/BogusApp-Common-MockDataProvider">
+      </FileRef>
       <FileRef
          location = "group:Common/BogusApp-Common-Models">
       </FileRef>
