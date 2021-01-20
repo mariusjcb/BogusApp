@@ -24,7 +24,7 @@ docker-compose build --parallel
 Now you are able to run docker container. You can use Docker Hub or simply run the following command:
 
 ```
-docker-compose build --parallel
+docker-compose up
 ```
 
 If you prefer to run a single service just run this command in service subdirectory.
