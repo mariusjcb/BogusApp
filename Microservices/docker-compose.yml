@@ -3,21 +3,56 @@ version: '3.7'
 services:
     bogusapp-microservices-apigateway:
         build: ./BogusApp-Microservices-ApiGateway
-        ports: 
-            - "8080:8080"
+        depends_on:
+          - bogusapp-microservices-shareddatabase
+        links:
+            - "bogusapp-microservices-channels:bogusapp-microservices-channels.local"
+            - "bogusapp-microservices-fees:bogusapp-microservices-fees.local"
+            - "bogusapp-microservices-benefits:bogusapp-microservices-benefits.local"
+            - "bogusapp-microservices-targetspecifics:bogusapp-microservices-targetspecifics.local"
+        ports:
+            - "8180:8180"
     bogusapp-microservices-channels:
         build: ./BogusApp-Microservices-Channels
-        expose: 
-            - "8081"
+        depends_on:
+          - bogusapp-microservices-shareddatabase
+        links:
+            - "bogusapp-microservices-fees:bogusapp-microservices-fees.local"
+            - "bogusapp-microservices-benefits:bogusapp-microservices-benefits.local"
+        ports:
+            - "8181"
     bogusapp-microservices-fees:
         build: ./BogusApp-Microservices-Fees
-        expose: 
-            - "8082"
+        depends_on:
+          - bogusapp-microservices-shareddatabase
+        links:
+            - "bogusapp-microservices-benefits:bogusapp-microservices-benefits.local"
+        ports:
+            - "8182"
     bogusapp-microservices-benefits:
         build: ./BogusApp-Microservices-Benefits
-        expose: 
-            - "8083"
+        depends_on:
+          - bogusapp-microservices-shareddatabase
+        ports:
+            - "8183"
     bogusapp-microservices-targetspecifics:
         build: ./BogusApp-Microservices-TargetSpecifics
-        expose: 
-            - "8084"
+        links:
+            - "bogusapp-microservices-channels:bogusapp-microservices-channels.local"
+            - "bogusapp-microservices-fees:bogusapp-microservices-fees.local"
+            - "bogusapp-microservices-benefits:bogusapp-microservices-benefits.local"
+        depends_on:
+          - bogusapp-microservices-shareddatabase
+        ports:
+            - "8184"
+    bogusapp-microservices-shareddatabase:
+        image: postgres:12-alpine
+        #        volumes:
+        #            - db_data:/var/lib/postgresql/data/pgdata
+        environment:
+            PGDATA: /var/lib/postgresql/data/pgdata
+            POSTGRES_USER: vapor_username
+            POSTGRES_PASSWORD: vapor_password
+            POSTGRES_DB: vapor_database
+        ports:
+            - '5432:5432'
