@@ -19,3 +19,6 @@
 [submodule "BogusApp-Microservices-TargetSpecifics"]
 	path = Microservices/BogusApp-Microservices-TargetSpecifics
 	url = https://github.com/mariusjcb/BogusApp-Microservices-TargetSpecifics.git
+[submodule "Common/BogusApp-Common-MockDataProvider"]
+	path = Common/BogusApp-Common-MockDataProvider
+	url = https://github.com/mariusjcb/BogusApp-Common-MockDataProvider.git
