@@ -17,6 +17,9 @@
          location = "group:Microservices/docker-compose.yml">
       </FileRef>
       <FileRef
+         location = "group:Microservices/run_all.sh">
+      </FileRef>
+      <FileRef
          location = "group:Microservices/BogusApp-Microservices-ApiGateway">
       </FileRef>
       <FileRef
@@ -24,9 +27,6 @@
       </FileRef>
       <FileRef
          location = "group:Microservices/BogusApp-Microservices-Channels">
-      </FileRef>
-      <FileRef
-         location = "group:Microservices/BogusApp-Microservices-Fees">
       </FileRef>
       <FileRef
          location = "group:Microservices/BogusApp-Microservices-TargetSpecifics">

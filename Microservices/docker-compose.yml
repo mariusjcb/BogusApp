@@ -7,7 +7,6 @@ services:
           - bogusapp-microservices-shareddatabase
         links:
             - "bogusapp-microservices-channels:bogusapp-microservices-channels.local"
-            - "bogusapp-microservices-fees:bogusapp-microservices-fees.local"
             - "bogusapp-microservices-benefits:bogusapp-microservices-benefits.local"
             - "bogusapp-microservices-targetspecifics:bogusapp-microservices-targetspecifics.local"
         ports:
@@ -17,18 +16,9 @@ services:
         depends_on:
           - bogusapp-microservices-shareddatabase
         links:
-            - "bogusapp-microservices-fees:bogusapp-microservices-fees.local"
             - "bogusapp-microservices-benefits:bogusapp-microservices-benefits.local"
         ports:
             - "8181"
-    bogusapp-microservices-fees:
-        build: ./BogusApp-Microservices-Fees
-        depends_on:
-          - bogusapp-microservices-shareddatabase
-        links:
-            - "bogusapp-microservices-benefits:bogusapp-microservices-benefits.local"
-        ports:
-            - "8182"
     bogusapp-microservices-benefits:
         build: ./BogusApp-Microservices-Benefits
         depends_on:
@@ -39,7 +29,6 @@ services:
         build: ./BogusApp-Microservices-TargetSpecifics
         links:
             - "bogusapp-microservices-channels:bogusapp-microservices-channels.local"
-            - "bogusapp-microservices-fees:bogusapp-microservices-fees.local"
             - "bogusapp-microservices-benefits:bogusapp-microservices-benefits.local"
         depends_on:
           - bogusapp-microservices-shareddatabase
