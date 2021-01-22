@@ -2,6 +2,14 @@
 
 > :warning: **Please ignore bad code styling in Microservices**. I will refactor it.
 
+## Clone Project
+
+To properly clone the project please use --recurse-submodules
+
+```
+git clone --recurse-submodules https://github.com/mariusjcb/BogusApp.git
+```
+
 ## SPM Configurations
 
 All SPM Packages - except those required to be compatible with **Linux (backend microservices)** - are configured to check codestyling with swiftlint before commiting changes. *Even it's annoying to enforce good practices this way...*
@@ -20,7 +28,7 @@ In order to run microservices you should already have installed Docker / Docker 
 To run all services, including api gateway, you should first build docker images. I really recommend you to build microservicess in parallel:
 
 ```
-docker-compose build --parallel
+cd Microservices && docker-compose build --parallel && cd ..
 ```
 
 If you experience some unclear build problems please try the same command without parallel flag.
@@ -28,7 +36,7 @@ If you experience some unclear build problems please try the same command withou
 Now you are able to run docker container. You can use Docker Hub or simply run the following command:
 
 ```
-docker-compose up
+cd Microservices && docker-compose up && cd ..
 ```
 
 If you prefer to run a single service just run this command in service subdirectory.
@@ -38,7 +46,7 @@ If you prefer to run a single service just run this command in service subdirect
 If you want to run the PLSql container without other services (it is required if you want to run services from Xcode) you should run the following command:
 
 ```
-docker-compose up -d bogusapp-microservices-debugdatabase
+cd Microservices && docker-compose up -d bogusapp-microservices-debugdatabase && cd ..
 ```
 
 ## Port allocation
