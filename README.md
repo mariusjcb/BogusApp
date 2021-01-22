@@ -25,21 +25,21 @@ Also there are Komondor, Danger and SwiftFormat already linked with all packages
 
 In order to run microservices you should already have installed Docker / Docker Hub and Docker Compose.
 
-To run all services, including api gateway, you should first build docker images. I really recommend you to build microservicess in parallel:
+To run all services, including api gateway, you should first build or pull docker images. 
+*Use "build" insted of "pull" in the following command to build all images instead of pulling them from Docker Hub*
 
 ```
-cd Microservices && docker-compose build --parallel && cd ..
+cd Microservices && docker-compose pull && cd ..
 ```
-
-If you experience some unclear build problems please try the same command without parallel flag.
 
 Now you are able to run docker container. You can use Docker Hub or simply run the following command:
+
+> :warning: ***If you run it for the very first time, please use up command twice, it will automigrate the database.***
 
 ```
 cd Microservices && docker-compose up && cd ..
 ```
 
-If you prefer to run a single service just run this command in service subdirectory.
 
 ## Run PlSQL database only
 

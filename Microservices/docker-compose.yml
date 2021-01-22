@@ -9,6 +9,7 @@ x-shared_environment: &shared_environment
 
 services:
     bogusapp-microservices-apigateway:
+        image: mariusjcb/bogusapp-microservices-apigateway:latest
         build: ./BogusApp-Microservices-ApiGateway
         links:
             - "bogusapp-microservices-channels:bogusapp-microservices-channels.local"
@@ -17,12 +18,14 @@ services:
         ports:
             - "8180:8180"
     bogusapp-microservices-benefits:
+        image: mariusjcb/bogusapp-microservices-benefits:latest
         build: ./BogusApp-Microservices-Benefits
         depends_on:
           - db-benefits
         expose:
             - "8183"
     bogusapp-microservices-channels:
+        image: mariusjcb/bogusapp-microservices-channels:latest
         build: ./BogusApp-Microservices-Channels
         depends_on:
           - bogusapp-microservices-benefits
@@ -32,6 +35,7 @@ services:
         expose:
             - "8181"
     bogusapp-microservices-targetspecifics:
+        image: mariusjcb/bogusapp-microservices-targetspecifics:latest
         build: ./BogusApp-Microservices-TargetSpecifics
         links:
             - "bogusapp-microservices-channels:bogusapp-microservices-channels.local"
