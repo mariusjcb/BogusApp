@@ -8,7 +8,7 @@ services:
         links:
             - "bogusapp-microservices-channels:bogusapp-microservices-channels.local"
             - "bogusapp-microservices-benefits:bogusapp-microservices-benefits.local"
-            - "bogusapp-microservices-targetspecifics:bogusapp-microservices-targetspecifics.local"
+            - "bogusapp-microservices-targetspecifics:bogusapp-microservices-targets.local"
         ports:
             - "8180:8180"
     bogusapp-microservices-benefits:
