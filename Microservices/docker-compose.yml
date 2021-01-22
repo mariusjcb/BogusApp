@@ -1,5 +1,12 @@
 version: '3.7'
 
+x-shared_environment: &shared_environment
+    LOG_LEVEL: ${LOG_LEVEL:-debug}
+    PGDATA: /var/lib/postgresql/data/pgdata
+    POSTGRES_USER: vapor_username
+    POSTGRES_PASSWORD: vapor_password
+    POSTGRES_DB: vapor_database
+
 services:
     bogusapp-microservices-apigateway:
         build: ./BogusApp-Microservices-ApiGateway
@@ -11,33 +18,48 @@ services:
             - "8180:8180"
     bogusapp-microservices-benefits:
         build: ./BogusApp-Microservices-Benefits
-        ports:
+        links:
+            - "db-benefits:db"
+        depends_on:
+          - db-benefits
+        expose:
             - "8183"
     bogusapp-microservices-channels:
         build: ./BogusApp-Microservices-Channels
         depends_on:
           - bogusapp-microservices-benefits
+          - db-channels
         links:
             - "bogusapp-microservices-benefits:bogusapp-microservices-benefits.local"
-        ports:
+            - "db-channels:db"
+        expose:
             - "8181"
     bogusapp-microservices-targetspecifics:
         build: ./BogusApp-Microservices-TargetSpecifics
         links:
             - "bogusapp-microservices-channels:bogusapp-microservices-channels.local"
             - "bogusapp-microservices-benefits:bogusapp-microservices-benefits.local"
+            - "db-targets:db"
         depends_on:
           - bogusapp-microservices-channels
-        ports:
+          - db-targets
+        expose:
             - "8184"
-#    bogusapp-microservices-shareddatabase:
-#        image: postgres:12-alpine
-#        #        volumes:
-#        #            - db_data:/var/lib/postgresql/data/pgdata
-#        environment:
-#            PGDATA: /var/lib/postgresql/data/pgdata
-#            POSTGRES_USER: vapor_username
-#            POSTGRES_PASSWORD: vapor_password
-#            POSTGRES_DB: vapor_database
-#        ports:
-#            - '5432:5432'
+    db-targets:
+        image: postgres:12-alpine
+        environment:
+                <<: *shared_environment
+        expose:
+            - '5432'
+    db-channels:
+        image: postgres:12-alpine
+        environment:
+                <<: *shared_environment
+        expose:
+            - '5432'
+    db-benefits:
+        image: postgres:12-alpine
+        environment:
+                <<: *shared_environment
+        expose:
+            - '5432'
