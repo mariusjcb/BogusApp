@@ -25,5 +25,5 @@ If you prefer to run a single service just run this command in service subdirect
 If you want to run the PLSql container without other services (it is required if you want to run services from Xcode) you should run the following command:
 
 ```
-docker-compose up -d bogusapp-microservices-shareddatabase
+docker-compose up -d bogusapp-microservices-debugdatabase
 ```
