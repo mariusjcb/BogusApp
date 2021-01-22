@@ -1,5 +1,7 @@
 # Microservices
 
+> :warning: **No important design patterns used in microservices**. I will refactor it.
+
 In order to run microservices you should already have installed Docker / Docker Hub and Docker Compose.
 
 To run all services, including api gateway, you should first build docker images. I really recommend you to build microservicess in parallel:
