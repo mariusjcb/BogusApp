@@ -3,8 +3,6 @@ version: '3.7'
 services:
     bogusapp-microservices-apigateway:
         build: ./BogusApp-Microservices-ApiGateway
-        depends_on:
-          - bogusapp-microservices-shareddatabase
         links:
             - "bogusapp-microservices-channels:bogusapp-microservices-channels.local"
             - "bogusapp-microservices-benefits:bogusapp-microservices-benefits.local"
@@ -13,14 +11,11 @@ services:
             - "8180:8180"
     bogusapp-microservices-benefits:
         build: ./BogusApp-Microservices-Benefits
-        depends_on:
-          - bogusapp-microservices-shareddatabase
         ports:
             - "8183"
     bogusapp-microservices-channels:
         build: ./BogusApp-Microservices-Channels
         depends_on:
-          - bogusapp-microservices-shareddatabase
           - bogusapp-microservices-benefits
         links:
             - "bogusapp-microservices-benefits:bogusapp-microservices-benefits.local"
@@ -32,18 +27,17 @@ services:
             - "bogusapp-microservices-channels:bogusapp-microservices-channels.local"
             - "bogusapp-microservices-benefits:bogusapp-microservices-benefits.local"
         depends_on:
-          - bogusapp-microservices-shareddatabase
           - bogusapp-microservices-channels
         ports:
             - "8184"
-    bogusapp-microservices-shareddatabase:
-        image: postgres:12-alpine
-        #        volumes:
-        #            - db_data:/var/lib/postgresql/data/pgdata
-        environment:
-            PGDATA: /var/lib/postgresql/data/pgdata
-            POSTGRES_USER: vapor_username
-            POSTGRES_PASSWORD: vapor_password
-            POSTGRES_DB: vapor_database
-        ports:
-            - '5432:5432'
+#    bogusapp-microservices-shareddatabase:
+#        image: postgres:12-alpine
+#        #        volumes:
+#        #            - db_data:/var/lib/postgresql/data/pgdata
+#        environment:
+#            PGDATA: /var/lib/postgresql/data/pgdata
+#            POSTGRES_USER: vapor_username
+#            POSTGRES_PASSWORD: vapor_password
+#            POSTGRES_DB: vapor_database
+#        ports:
+#            - '5432:5432'
