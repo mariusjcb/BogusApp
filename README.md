@@ -62,5 +62,5 @@ sudo lsof -i :PORT
 Now, you should be able to get the PID and run:
 
 ```
-kill -9 PID
+sudo kill -9 PID
 ```
