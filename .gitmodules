@@ -25,3 +25,9 @@
 [submodule "BogusApp-iOS"]
 	path = BogusApp-iOS
 	url = https://github.com/mariusjcb/BogusApp-iOS.git
+[submodule "Features/BogusApp-Features-TargetsList"]
+	path = Features/BogusApp-Features-TargetsList
+	url = https://github.com/mariusjcb/BogusApp-Features-TargetsList.git
+[submodule "Common/BogusApp-Common-Utils"]
+	path = Common/BogusApp-Common-Utils
+	url = https://github.com/mariusjcb/BogusApp-Common-Utils.git

@@ -41,6 +41,19 @@
       <FileRef
          location = "group:Common/BogusApp-Common-Models">
       </FileRef>
+      <FileRef
+         location = "group:Common/BogusApp-Common-Utils">
+      </FileRef>
+      <FileRef
+         location = "group:Common/BogusApp-Common-Networking">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Features">
+      <FileRef
+         location = "group:Features/BogusApp-Features-TargetsList">
+      </FileRef>
    </Group>
    <Group
       location = "container:"
