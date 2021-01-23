@@ -34,3 +34,6 @@
 [submodule "Common/BogusApp-Common-Networking"]
 	path = Common/BogusApp-Common-Networking
 	url = https://github.com/mariusjcb/BogusApp-Common-Networking.git
+[submodule "Features/BogusApp-Features-ChannelsList"]
+	path = Features/BogusApp-Features-ChannelsList
+	url = https://github.com/mariusjcb/BogusApp-Features-ChannelsList.git
