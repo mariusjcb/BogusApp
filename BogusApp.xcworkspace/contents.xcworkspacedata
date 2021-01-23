@@ -52,6 +52,9 @@
       location = "container:"
       name = "Features">
       <FileRef
+         location = "group:Features/BogusApp-Features-ChannelsList">
+      </FileRef>
+      <FileRef
          location = "group:Features/BogusApp-Features-TargetsList">
       </FileRef>
    </Group>
