@@ -42,4 +42,11 @@
          location = "group:Common/BogusApp-Common-Models">
       </FileRef>
    </Group>
+   <Group
+      location = "container:"
+      name = "BogusApp-iOS">
+      <FileRef
+         location = "group:BogusApp-iOS/BougsApp-iOS/BougsApp-iOS.xcodeproj">
+      </FileRef>
+   </Group>
 </Workspace>

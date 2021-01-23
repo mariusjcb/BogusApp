@@ -22,3 +22,6 @@
 [submodule "Common/BogusApp-Common-MockDataProvider"]
 	path = Common/BogusApp-Common-MockDataProvider
 	url = https://github.com/mariusjcb/BogusApp-Common-MockDataProvider.git
+[submodule "BogusApp-iOS"]
+	path = BogusApp-iOS
+	url = https://github.com/mariusjcb/BogusApp-iOS.git
