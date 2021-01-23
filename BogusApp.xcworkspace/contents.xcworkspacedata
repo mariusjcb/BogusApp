@@ -46,7 +46,7 @@
       location = "container:"
       name = "BogusApp-iOS">
       <FileRef
-         location = "group:BogusApp-iOS/BougsApp-iOS/BougsApp-iOS.xcodeproj">
+         location = "group:BogusApp-iOS/BougsApp-iOS.xcodeproj">
       </FileRef>
    </Group>
 </Workspace>
