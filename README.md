@@ -37,7 +37,7 @@ Now you are able to run docker container. You can use Docker Hub or simply run t
 > :warning: ***If you run it for the very first time, please use up command twice, it will automigrate the database.***
 
 ```
-cd Microservices && docker-compose up && cd ..
+cd Microservices && docker-compose up && docker-compose down && docker-compose up && cd ..
 ```
 
 
