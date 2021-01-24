@@ -71,11 +71,4 @@
          location = "group:BogusApp-iOS/BougsApp-iOS.xcodeproj">
       </FileRef>
    </Group>
-   <Group
-      location = "container:"
-      name = "BogusApp-WatchOS">
-      <FileRef
-         location = "group:BogusApp-WatchOS/BogusApp-WatchOS.xcodeproj">
-      </FileRef>
-   </Group>
 </Workspace>
