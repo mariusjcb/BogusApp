@@ -37,3 +37,6 @@
 [submodule "Features/BogusApp-Features-ChannelsList"]
 	path = Features/BogusApp-Features-ChannelsList
 	url = https://github.com/mariusjcb/BogusApp-Features-ChannelsList.git
+[submodule "Features/BogusApp-Features-PlansList"]
+	path = Features/BogusApp-Features-PlansList
+	url = https://github.com/mariusjcb/BogusApp-Features-PlansList.git
