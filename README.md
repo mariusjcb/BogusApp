@@ -1,8 +1,19 @@
-# Developer Tools
-
 > :warning: **Please ignore bad code styling in Microservices**. I will refactor it.
 
-## Clone Project
+# Components
+
+* **Microservices**: Vapor microservices for server-side.
+* **Common/***: Shared generic components between apps / app-server.
+* **Features/***: Shared features. Each feature have at least a ViewModel.
+
+I used **MVVM with FlowCoordinators** as main architecture (see Common-UIComponents and AppFlowCoordinators). Complex features have own structure based on **Clean**.
+
+# WIP: XCTests, XCUITests, CI/CD Workflows
+
+* Had not time to write some xc(ui)tests yet
+* Had not time to configure CI/CD with github actions yet
+
+# Clone Project
 
 To properly clone the project please use --recurse-submodules
 
@@ -10,16 +21,15 @@ To properly clone the project please use --recurse-submodules
 git clone --recurse-submodules https://github.com/mariusjcb/BogusApp.git
 ```
 
-## SPM Configurations
+# SwiftLint & Komondor
 
 All SPM Packages - except those required to be compatible with **Linux (backend microservices)** - are configured to check codestyling with swiftlint before commiting changes. *Even it's annoying to enforce good practices this way...*
 
-Also there are Komondor, Danger and SwiftFormat already linked with all packages. When creating a new package please follow the existing pattern. *Should update this repo with SwiftGen to simplify package creation*
+Also there are Komondor already linked with all packages. When creating a new package please follow the existing pattern. *Should update this repo with SwiftGen to simplify package creation*
 
-- *swift run komondor install* // Setup git hooks
-- *swift run swiftformat* // run SwiftFormat
-- *swift run swiftlint --autocorrect* // run SwiftLint
-- *swift run danger-swift ci* // run danger in CI (for code reviews)
+- **swift run komondor install** // Setup git hooks, run it after submodule installation or before git commiting for the first time on your machine
+- **swift run swiftlint --autocorrect** // run SwiftLint
+
 
 # Microservices
 
