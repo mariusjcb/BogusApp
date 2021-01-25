@@ -8,7 +8,7 @@
 
 I used **MVVM with FlowCoordinators** as main architecture (see Common-UIComponents and AppFlowCoordinators). Complex features have own structure based on **Clean**.
 
-# WIP: XCTests, XCUITests, CI/CD Workflows
+## WIP: XCTests, XCUITests, CI/CD Workflows
 
 * Had not time to write some xc(ui)tests yet
 * Had not time to configure CI/CD with github actions yet
