@@ -1,4 +1,4 @@
-> :warning: **Please ignore bad code styling in Microservices**. I will refactor it.
+> :warning: **Please ignore Microservices code styling**. I will refactor it.
 
 > :warning: **For now you are unable to send emails from TV. I tried MultipeerConnectivity but still not working yet.**.
 
