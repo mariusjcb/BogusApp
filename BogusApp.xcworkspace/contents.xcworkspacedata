@@ -36,6 +36,9 @@
       location = "container:"
       name = "Common">
       <FileRef
+         location = "group:Common/BogusApp-Common-UIComponents">
+      </FileRef>
+      <FileRef
          location = "group:Common/BogusApp-Common-MockDataProvider">
       </FileRef>
       <FileRef
@@ -69,6 +72,13 @@
       name = "BogusApp-iOS">
       <FileRef
          location = "group:BogusApp-iOS/BougsApp-iOS.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "BogusApp-TV">
+      <FileRef
+         location = "group:BogusTV/BogusTV.xcodeproj">
       </FileRef>
    </Group>
 </Workspace>

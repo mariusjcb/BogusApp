@@ -43,3 +43,9 @@
 [submodule "Features/BogusApp-Features-CampaignReview"]
 	path = Features/BogusApp-Features-CampaignReview
 	url = https://github.com/mariusjcb/BogusApp-Features-CampaignReview.git
+[submodule "Common/BogusApp-Common-UIComponents"]
+	path = Common/BogusApp-Common-UIComponents
+	url = https://github.com/mariusjcb/BogusApp-Common-UIComponents.git
+[submodule "BogusTV"]
+	path = BogusTV
+	url = https://github.com/mariusjcb/BogusTV.git
