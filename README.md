@@ -4,6 +4,8 @@
 
 > :warning: **Keep iOS app opened while trying to send emails from Apple Watch. The companion iOS app will automatically open compose controller for you.**.
 
+**Known Issue:** You are able to navigate through screens even there is no selection. It's easy to fix it from ViewModels tho
+
 # Components
 
 * **Microservices**: Vapor microservices for server-side.
