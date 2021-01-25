@@ -4,6 +4,9 @@
    <FileRef
       location = "group:README.md">
    </FileRef>
+   <FileRef
+      location = "group:/Users/mariusjcb/Developer/BogusApp/demo-watchos.gif">
+   </FileRef>
    <Group
       location = "container:"
       name = "Microservices">

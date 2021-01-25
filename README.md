@@ -6,6 +6,8 @@
 
 **Known Issue:** You are able to navigate through screens even there is no selection. It's easy to fix it from ViewModels tho
 
+![Demo WatchOS](demo-watchos.gif)
+
 # Components
 
 * **Microservices**: Vapor microservices for server-side.
