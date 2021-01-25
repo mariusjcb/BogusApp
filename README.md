@@ -1,3 +1,6 @@
+![Demo WatchOS](demo-watchos.gif)
+
+
 > :warning: **Please ignore Microservices code styling**. I will refactor it.
 
 > :warning: **For now you are unable to send emails from TV. I tried MultipeerConnectivity but still not working yet.**.
@@ -5,8 +8,6 @@
 > :warning: **Keep iOS app opened while trying to send emails from Apple Watch. The companion iOS app will automatically open compose controller for you.**.
 
 **Known Issue:** You are able to navigate through screens even there is no selection. It's easy to fix it from ViewModels tho
-
-![Demo WatchOS](demo-watchos.gif)
 
 # Components
 
