@@ -3,6 +3,11 @@ on:
   pull_request:
     branches:
     - master
+  workflow_dispatch:
+    inputs:
+      newUnityVersion:
+        description: 'Run tests...'
+        required: true
 jobs:
   test:
     name: Testing Networking and iOS app
