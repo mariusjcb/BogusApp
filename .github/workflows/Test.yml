@@ -1,0 +1,18 @@
+name: Test
+on:
+  pull_request:
+    branches:
+    - master
+jobs:
+  test:
+    name: Testing Networking and iOS app
+    runs-on: macOS-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v1
+      - name: Force XCode 12
+        run: sudo xcode-select -switch /Applications/Xcode_12.app
+      - name: Testing Swift package
+        run: exec ./.github/scripts/test_networking.sh
+      - name: Testing iOS app
+        run: exec ./.github/scripts/test_iosapp.sh
